@@ -1,4 +1,28 @@
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
 <body>
-  HELLO WORLD2
+  <div>
+    <p>The number of visitors is : <span id="cntr">0</span></p>
+  </div>
+
+  <script>
+    function counter_fn() {
+      var counter = document.getElementById("cntr");
+      var count = 0;
+      count = parseInt(counter.innerHTML);
+      count = count + 1;
+      counter.innerHTML = count;
+    }
+    window.onload = counter_fn;
+  </script>
 </body>
+
+</html>
